@@ -1,0 +1,31 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+#cabecalho {
+  background-color: rgb(150, 150, 247);
+}
+
+a {
+  font-size: 50px;
+}
+
+.principal {
+  color: white;
+  background-color: blue;
+  font-size: 80px;
+}
+
+.menu {
+  display: flex;
+  align-items: center;
+  gap: 40px;
+  background-color: #9a9eff;
+}
+
+h2 {
+  color: rgb(53, 103, 203);
+  font-size: 100px;
+}
