@@ -10,28 +10,129 @@
         padding: 0;
         box-shadow: none;
       }
+
+      body {
+        height: 100vh; /*vh: Elemento ocupa 100% da altura da tela */
+        background-color: rgb(206, 207, 211);
+      }
       .container {
-        border: 1px solid green;
+        background-color: white;
         display: flex; /* Coloca um container flexível um do lado do outro */
         flex-direction: row; /* Define a direção dos elementos filhos como linha */
-        justify-content: center; /* Alinha os elementos filhos no centro do container */
+        justify-content: space-around; /* Define o alinhamento dos elementos filhos no eixo principal */
         gap: 10px; /* Define um espaçamento entre os elementos filhos */
-        background-color: rgb(190, 175, 4);
+        width: 80%;
       }
       .cards {
-        border: 1px solid orange;
-        height: 400px;
-        width: 300px;
-        background-color: blue;
+        border: 1px solid rgb(0, 0, 0);
+        height: 200px;
+        width: 200px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        /* background-color: rgb(124, 124, 127); */
+      }
+
+      .cards p {
+        text-align: center;
+      }
+
+      .main {
+        display: flex;
+        flex-direction: column;
+        gap: 50px;
+        height: 100vh; /*Essa linha faz com que o container ocupe 100% da altura da tela colocando o quadrado para baixo */
+        /* justify-content: center; Essa linha centraliza os elementos filhos no eixo principal */
+        align-items: center; /* Alinha os elementos filhos no eixo transversal */
+      }
+
+      .img-cards {
+        width: 100px;
+      }
+
+      header {
+        height: 90px;
+        background-color: #171a21;
+      }
+
+      .logo-cabecalho {
+        width: 100px;
+      }
+
+      .logo-navegacao {
+        width: 50px;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        padding-left: 30px;
+      }
+
+      .navegacao {
+        display: flex;
+        flex-direction: row;
+        gap: 20px;
+        padding-right: 30px;
       }
     </style>
   </head>
   <body>
-    <div class="container">
-      <div class="cards"></div>
-      <div class="cards"></div>
-      <div class="cards"></div>
-      <div class="cards"></div>
+    <header>
+      <div class="logo-navegacao">
+        <img
+          src="https://store.fastly.steamstatic.com/public/shared/images/header/logo_steam.svg?t=962016"
+          alt="Steam Logo"
+          class="logo-cabecalho"
+        />
+
+        <div class="navegacao">
+          <a href="">Loja</a>
+          <a href="">Comunidade</a>
+          <a href="">Sobre</a>
+          <a href="">Suporte</a>
+          <a href="">Conta</a>
+          <a href="">Carrinho</a>
+          <a href="">Pesquisar</a>
+        </div>
+      </div>
+    </header>
+    <div class="main">
+      <div class="container">
+        <div class="cards">
+          <img src="../img/vallheim.png" alt="Vallheim" class="img-cards" />
+          <p>Valheim é um jogo de sobrevivência Viking e de mundo aberto.</p>
+        </div>
+        <div class="cards">
+          <img src="../img/cs.png" alt="Counter-Strike" class="img-cards" />
+          <p>Counter-Strike é um jogo de tiro em primeira pessoa.</p>
+        </div>
+        <div class="cards">
+          <img src="../img/hl.png" alt="Hogwarts Legacy" class="img-cards" />
+          <p>Hogwarts Legacy é um jogo de RPG de mundo aberto.</p>
+        </div>
+        <div class="cards">
+          <img src="../img/vallheim.png" alt="Vallheim" class="img-cards" />
+          <p>Valheim é um jogo de sobrevivência Viking e de mundo aberto.</p>
+        </div>
+      </div>
+      <div class="container">
+        <div class="cards">
+          <img src="../img/vallheim.png" alt="Vallheim" class="img-cards" />
+          <p>Valheim é um jogo de sobrevivência Viking e de mundo aberto.</p>
+        </div>
+        <div class="cards">
+          <img src="../img/vallheim.png" alt="Vallheim" class="img-cards" />
+          <p>Valheim é um jogo de sobrevivência Viking e de mundo aberto.</p>
+        </div>
+        <div class="cards">
+          <img src="../img/vallheim.png" alt="Vallheim" class="img-cards" />
+          <p>Valheim é um jogo de sobrevivência Viking e de mundo aberto.</p>
+        </div>
+        <div class="cards">
+          <img src="../img/vallheim.png" alt="Vallheim" class="img-cards" />
+          <p>Valheim é um jogo de sobrevivência Viking e de mundo aberto.</p>
+        </div>
+      </div>
     </div>
   </body>
 </html>
