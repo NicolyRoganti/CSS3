@@ -1,31 +1,120 @@
+:root {
+  --altura-cabecalho: 50px;
+  --cor-tema-padrao-1: #171a21;
+  --cor-tema-padrao-2: #2a475e;
+}
+
 * {
   margin: 0;
   padding: 0;
-  box-sizing: border-box;
+  box-shadow: none;
 }
 
-#cabecalho {
-  background-color: rgb(150, 150, 247);
+body {
+  height: 100vh; /*vh: Elemento ocupa 100% da altura da tela */
+  background-color: rgb(206, 207, 211);
 }
-
-a {
-  font-size: 20px;
+.container {
+  background-color: white;
+  display: flex; /* Coloca um container flexível um do lado do outro */
+  flex-direction: row; /* Define a direção dos elementos filhos como linha */
+  justify-content: space-around; /* Define o alinhamento dos elementos filhos no eixo principal */
+  gap: 10px; /* Define um espaçamento entre os elementos filhos */
+  width: 80%;
 }
-
-.principal {
-  color: white;
-  background-color: blue;
-  font-size: 40px;
-}
-
-.menu {
+.cards {
+  border: 1px solid rgb(0, 0, 0);
+  height: 200px;
+  width: 200px;
   display: flex;
+  flex-direction: column;
   align-items: center;
-  gap: 20px;
-  background-color: #9a9eff;
+  /* background-color: rgb(124, 124, 127); */
 }
 
-h2 {
-  color: rgb(53, 103, 203);
-  font-size: 50px;
+.cards p {
+  text-align: center;
+}
+
+.main {
+  display: flex;
+  padding-top: 50px;
+  flex-direction: column;
+  gap: 50px;
+  /* justify-content: center; Essa linha centraliza os elementos filhos no eixo principal */
+  align-items: center; /* Alinha os elementos filhos no eixo transversal */
+  height: calc(
+    100vh - var(--altura-cabecalho)
+  ); /* Define a altura do elemento main como 100% da altura da tela menos a altura do header */
+}
+
+.img-cards {
+  width: 100px;
+}
+
+header {
+  height: var(--altura-cabecalho);
+  background-color: var(--cor-tema-padrao-1);
+  /* margin-bottom: 40px; */
+}
+
+.logo-cabecalho {
+  width: 150px;
+}
+
+.logo-navegacao {
+  width: 50px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding-left: 30px;
+}
+
+.navegacao {
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+  padding-right: 30px;
+  word-spacing: 5px;
+}
+
+footer {
+  background-color: var(--cor-tema-padrao-2);
+  height: 500px;
+}
+.Pesquisar {
+  color: #fff;
+  flex: 1;
+  min-width: 0;
+  background-color: unset;
+  padding: 0 10px;
+  border-radius: 2px 0px 0px 2px;
+  border: 1px solid hsla(0, 0%, 100%, 0.1411764706);
+}
+
+.Botao-Pesquisar {
+  border-radius: 0px 1px 1px 0px;
+  background: unset;
+  width: 25px;
+  border: none;
+  color: #fff;
+  cursor: pointer;
+}
+
+.banner-principal {
+  width: 100vw;
+  display: flex;
+  flex-direction: row;
+  background-color: var(--cor-tema-padrao-2);
+  text-align: center;
+  justify-content: center;
+}
+
+.banner-principal img {
+  margin-top: 1px;
+  width: 50%;
+  height: 300px;
+  border-radius: 5px;
+  border: 4px solid black;
 }

@@ -5,6 +5,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Flex Box</title>
     <style>
+      :root {
+        --altura-cabecalho: 50px;
+        --cor-tema-padrao-1: #171a21;
+        --cor-tema-padrao-2: #2a475e;
+      }
+
       * {
         margin: 0;
         padding: 0;
@@ -41,9 +47,11 @@
         display: flex;
         flex-direction: column;
         gap: 50px;
-        height: 100vh; /*Essa linha faz com que o container ocupe 100% da altura da tela colocando o quadrado para baixo */
         /* justify-content: center; Essa linha centraliza os elementos filhos no eixo principal */
         align-items: center; /* Alinha os elementos filhos no eixo transversal */
+        height: calc(
+          100vh - var(--altura-cabecalho)
+        ); /* Define a altura do elemento main como 100% da altura da tela menos a altura do header */
       }
 
       .img-cards {
@@ -51,12 +59,12 @@
       }
 
       header {
-        height: 90px;
-        background-color: #171a21;
+        height: var(--altura-cabecalho);
+        background-color: var(--cor-tema-padrao-1);
       }
 
       .logo-cabecalho {
-        width: 100px;
+        width: 150px;
       }
 
       .logo-navegacao {
@@ -73,6 +81,12 @@
         flex-direction: row;
         gap: 20px;
         padding-right: 30px;
+        word-spacing: 5px;
+      }
+
+      footer {
+        background-color: var(--cor-tema-padrao-2);
+        height: 500px;
       }
     </style>
   </head>
@@ -134,5 +148,11 @@
         </div>
       </div>
     </div>
+
+    <footer>
+      <p style="color: white">
+        © 2026 Steam. Todos os direitos reservados à Nicoly Roganti.
+      </p>
+    </footer>
   </body>
 </html>

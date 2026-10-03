@@ -3,34 +3,113 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Atividade CSS 1</title>
+    <title>Atividade CSS 1 "Minha Loja Steam Personalizada"</title>
     <link rel="stylesheet" href="./style.css" />
   </head>
   <body>
-    <header id="cabecalho" class="menu">
-      <img src="../img/steamlogo.png" alt="Logo Steam" height="60" />
-      <a href="#">Menu</a>
-      <a href="#">Loja</a>
-      <a href="#">Lista de Desejos</a>
-      <a href="#">Amigos</a>
+    <header>
+      <div class="logo-navegacao">
+        <img
+          src="https://store.fastly.steamstatic.com/public/shared/images/header/logo_steam.svg?t=962016"
+          alt="Steam Logo"
+          class="logo-cabecalho"
+        />
+
+        <div class="navegacao">
+          <a href="">Loja</a>
+          <a href="">Comunidade</a>
+          <a href="">Sobre</a>
+          <a href="">Suporte</a>
+          <a href="">Conta</a>
+          <a href="">Carrinho</a>
+          <a href="">Pesquisar</a>
+
+          <input
+            class="Pesquisar"
+            placeholder="Pesquisar na Loja"
+            type="text"
+            value=""
+            name="term"
+          />
+          <button class="Botao-Pesquisar" type="submit">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 18 18"
+              fill="none"
+              aria-label="Search"
+            >
+              <path
+                fill="currentColor"
+                d="M13.8296 12.0786C14.8347 10.6321 15.2623 8.86133 15.0284 7.11496C14.7945 5.36859 13.9159 3.77313 12.5656 2.64269C11.2153 1.51224 9.49114 0.928708 7.73254 1.00696C5.97394 1.08522 4.30831 1.8196 3.06357 3.06552C1.81882 4.31144 1.08514 5.97864 1.00696 7.7389C0.928776 9.49916 1.51176 11.2249 2.64114 12.5765C3.77052 13.9281 5.36446 14.8075 7.10919 15.0417C8.85391 15.2758 10.623 14.8477 12.0682 13.8417L15.2185 17L15.3997 16.8187L16.8188 15.3982L17 15.2168L13.8296 12.0786ZM8.04222 12.5824C7.14643 12.5824 6.27075 12.3165 5.52593 11.8183C4.7811 11.3202 4.20058 10.6122 3.85777 9.78376C3.51497 8.95538 3.42528 8.04384 3.60004 7.16443C3.7748 6.28502 4.20616 5.47723 4.83958 4.84321C5.47301 4.20919 6.28004 3.77742 7.15862 3.60249C8.0372 3.42757 8.94787 3.51734 9.77548 3.86047C10.6031 4.2036 11.3104 4.78467 11.8081 5.5302C12.3058 6.27573 12.5714 7.15223 12.5714 8.04887C12.5714 9.25123 12.0943 10.4043 11.2449 11.2545C10.3955 12.1047 9.24344 12.5824 8.04222 12.5824V12.5824Z"
+              ></path>
+            </svg>
+          </button>
+        </div>
+      </div>
     </header>
-    <div>
-      <h1 class="principal">Bem-vindo à Steam</h1>
+    <div class="banner-principal">
+      <img
+        src="https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/413150/header.jpg?t=1786554168"
+      />
+      <div>
+        <h2 style="color: white">
+          Bem-vindo à minha loja Steam personalizada!
+        </h2 style= "flex-column">
+        <p style="color: gray">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed euismod,
+          nunc ut bibendum tincidunt, nunc nisl aliquam nunc, eget aliquam nisl
+          nunc velLorem ipsum dolor sit amet, consectetur adipiscing elit. Sed
+          euismod, nunc ut bibendum tincidunt, nunc nisl aliquam nunc, eget
+          aliquam nisl nunc vel nunc vel nunc vel nunc vel nunc vel nunc vel
+          nunc vel nunc vel nunc vel
+        </p>
+      </div>
     </div>
-    <div style="background-color: gray; display: flex; flex-direction: row">
-      <img src="../img/hp.png" alt="Imagem banner" height="200px" />
-      <h2>Promoções de jogos</h2>
-      <p style="text-align: right">
-        Lorem Ipsum is simply dummy text of the printing and typesetting
-        industry. Lorem Ipsum has been the industry's standard dummy text ever
-        since 1966, when designers at Letraset and James Mosley, the librarian
-        at St Bride Printing Library in London, took a 1914 Cicero translation
-        and scrambled it to make dummy text for Letraset's Body Type sheets. It
-        has survived not only many decades, but also the leap into electronic
-        typesetting, remaining essentially unchanged. It was popularised thanks
-        to these sheets and more recently with desktop publishing software like
-        Aldus PageMaker and Microsoft Word including versions of Lorem Ipsum.
+    <div class="main">
+      <div class="container">
+        <div class="cards">
+          <img src="../img/vallheim.png" alt="Vallheim" class="img-cards" />
+          <p>Valheim é um jogo de sobrevivência Viking e de mundo aberto.</p>
+        </div>
+        <div class="cards">
+          <img src="../img/cs.png" alt="Counter-Strike" class="img-cards" />
+          <p>Counter-Strike é um jogo de tiro em primeira pessoa.</p>
+        </div>
+        <div class="cards">
+          <img src="../img/hl.png" alt="Hogwarts Legacy" class="img-cards" />
+          <p>Hogwarts Legacy é um jogo de RPG de mundo aberto.</p>
+        </div>
+        <div class="cards">
+          <img src="../img/vallheim.png" alt="Vallheim" class="img-cards" />
+          <p>Valheim é um jogo de sobrevivência Viking e de mundo aberto.</p>
+        </div>
+      </div>
+      <div class="container">
+        <div class="cards">
+          <img src="../img/vallheim.png" alt="Vallheim" class="img-cards" />
+          <p>Valheim é um jogo de sobrevivência Viking e de mundo aberto.</p>
+        </div>
+        <div class="cards">
+          <img src="../img/vallheim.png" alt="Vallheim" class="img-cards" />
+          <p>Valheim é um jogo de sobrevivência Viking e de mundo aberto.</p>
+        </div>
+        <div class="cards">
+          <img src="../img/vallheim.png" alt="Vallheim" class="img-cards" />
+          <p>Valheim é um jogo de sobrevivência Viking e de mundo aberto.</p>
+        </div>
+        <div class="cards">
+          <img src="../img/vallheim.png" alt="Vallheim" class="img-cards" />
+          <p>Valheim é um jogo de sobrevivência Viking e de mundo aberto.</p>
+        </div>
+      </div>
+    </div>
+
+    <footer>
+      <p style="color: white">
+        © 2026 Nicoly Roganti Corporation. Todos os direitos reservados. Todas
+        as marcas registradas são propriedade de seus respectivos proprietários
+        no Brasil e em outros países.
       </p>
-    </div>
+    </footer>
   </body>
 </html>
